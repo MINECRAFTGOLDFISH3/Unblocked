@@ -42,11 +42,20 @@
 			padding: 1px; }
 			a {
 			color: #ffffff; }
+			.clicker {
+			background-color: #45CC83;
+			color: white;
+			font-family: Arial; }
+			.clicker:hover {
+			background-color: #349963;
+			color: white;
+			font-family: Arial; }
 		</style>
 	</head>
 	<body>
+		<button class="clicker">Click if bored</button>
 		<div>
-			<p> <br  /> <br  /> <br  /> <br  /> </p>
+			<p> <br  /> <br  /> </p>
 			<div id="center">
 				<h1>Unblocked</h1>
 				<p>Full of <b>free</b> unblocked games with <b>no ads!</b> </p>
@@ -63,5 +72,8 @@
 				</div>
 			</footer>
 		</div>
+		<script>
+			let clicks = 0; document.querySelector('.clicker').addEventListener('click', (a) => { clicks++; a.target.textContent = `Clicks: ${clicks}`; });
+		</script>
 	</body>
 </html>
